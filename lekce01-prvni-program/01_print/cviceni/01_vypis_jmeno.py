@@ -2,5 +2,8 @@
 # Doplň kód pod zadání a soubor spusť (Run).
 
 # Vypiš na obrazovku svoje jméno.
-
+print("Irina")
+#nebo
+jmeno = ("Irina")
+print (jmeno)
 

@@ -4,5 +4,7 @@
 # Vypiš dvě slova, každé na svém řádku:
 #    Dnes
 #    je
+print("Dnes")
+print("je")
 
 

@@ -31,3 +31,5 @@ print('Máma má mísu')
 # mezi slovo print a závorku se mezera NEpíše.
 #   Správně:  print("ahoj")
 #   Špatně:   print ("ahoj")
+jmeno = input("Jak se jmenujes?")
+print("Ahoj",  jmeno)

@@ -5,4 +5,12 @@
 #     Prohoď jejich hodnoty tak, aby v a bylo 3 a v b bylo 5.
 #     Nakonec obě vypiš.
 
+a = 5 
+b = 3
 
+print (a,b)
+
+b = 5 
+a = 3
+
+print (a,b)
