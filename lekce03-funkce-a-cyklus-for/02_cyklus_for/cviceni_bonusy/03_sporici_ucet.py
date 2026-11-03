@@ -5,4 +5,10 @@
 #     Spočítej cyklem, kolik na účtu bude po deseti letech
 #     (každý rok se částka vynásobí 1.05), a výsledek vypiš.
 
+castka = int(input("kolik mas na sporicim uctu:"))
 
+for rok in range (1, 11):
+    castka = castka * 1.05
+print(round(castka,2))
+ 
+ 

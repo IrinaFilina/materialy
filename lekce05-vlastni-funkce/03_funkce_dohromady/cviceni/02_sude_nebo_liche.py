@@ -7,4 +7,19 @@
 #    se na je_sude zeptá.
 #    Pak v cyklu for vypiš popis čísel od 1 do 6.
 
+def je_sude(cislo):
+    if cislo%2==0:
+        return True
+    else:
+        return False
+    
+def popis(cislo):
+    if je_sude(cislo) == True:
+        print (cislo, "je sude")
+    else:
+       print (cislo, "je liche") 
 
+popis(7)
+popis(4)
+popis(16)
+popis(133)

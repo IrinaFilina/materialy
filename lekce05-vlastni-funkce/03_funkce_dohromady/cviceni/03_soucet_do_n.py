@@ -5,3 +5,10 @@
 #    soucet_do(5) vrátí 15.
 
 
+def soucet_do(n):
+    pocet = 0
+    for i in range (1, n+1):
+        pocet = pocet + i
+    return pocet
+
+print(soucet_do(5))

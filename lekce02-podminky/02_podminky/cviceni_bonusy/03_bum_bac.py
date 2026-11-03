@@ -8,4 +8,13 @@
 #       - "Bác", když je dělitelné jen pěti,
 #       - jinak samotné číslo.
 
+cislo = int(input("Napis nejake cislo"))
 
+if cislo%3 == 0 and cislo%5 == 0:
+    print("BumBác")
+elif cislo%3 == 0 and cislo%5 != 0:
+    print("Bum")
+elif cislo%3 != 0 and cislo%5 == 0:
+    print("Bác")
+else:
+   print(cislo) 

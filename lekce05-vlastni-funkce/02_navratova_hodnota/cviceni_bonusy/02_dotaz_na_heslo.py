@@ -6,4 +6,17 @@
 #     Uvnitř použij funkci je_heslo_dost_dlouhe z výkladu –
 #     zkopíruj si její definici sem nahoru, soubory se navzájem nevidí.
 
+def je_heslo_dost_dlouhe (heslo):
+   return len(heslo) >= 8
 
+
+def zeptej_se_na_heslo():
+    heslo = input("Zadej heslo: ")
+    while je_heslo_dost_dlouhe(heslo) is False:
+     print ("Heslo:", heslo, "je kratsi nez 8 znaku")
+     heslo = input("Zadej heslo: ")
+    return heslo
+
+
+nove_heslo = zeptej_se_na_heslo()
+print("Heslo nastaveno:", nove_heslo)

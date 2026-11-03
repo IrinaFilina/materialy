@@ -6,3 +6,13 @@
 #    dokud uživatel nezadá -1, a u každého zadání vypiš hodnocení.
 
 
+def hodnoceni(body):
+    if body >= 50:
+        return "prošla"
+    else:
+        return "neprošla"
+
+body = int(input("Kolik mas bodu?"))
+while body != -1:
+    print(body, "bodu", hodnoceni(body))
+    body = int(input("Kolik mas bodu?"))

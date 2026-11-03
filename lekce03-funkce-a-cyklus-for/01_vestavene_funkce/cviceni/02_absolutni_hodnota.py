@@ -4,3 +4,5 @@
 # Vypiš absolutní hodnotu rozdílu čísel 4 a 11.
 
 
+rozdil = 4-11
+print(abs(rozdil))

@@ -5,3 +5,6 @@
 #    Pak proměnnou vysledek vypiš.
 
 
+vysledek = (2+2==4)
+
+print(vysledek)

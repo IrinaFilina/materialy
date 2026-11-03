@@ -8,6 +8,13 @@
 #       - "různostranný", když jsou všechny strany různé.
 a = 5
 b = 5
-c = 8
+c = 5
+
+if a==b and b==c:
+    print("rovnostranný")
+elif a==b or b==c or c==a:
+    print("rovnoramenný")
+else:
+    print("různostranný")
 
 

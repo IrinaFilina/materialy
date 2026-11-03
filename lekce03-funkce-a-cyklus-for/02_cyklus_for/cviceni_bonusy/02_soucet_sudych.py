@@ -3,4 +3,9 @@
 
 # Spočítej cyklem součet všech sudých čísel od 1 do 100 a vypiš ho.
 
+soucet = 0
+for i in range (2,101,2):
+    soucet = soucet + i
+print (soucet)
+
 

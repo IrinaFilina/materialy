@@ -7,4 +7,10 @@
 #    cokoli jiného → "Neznámý signál".
 barva = "zelená"
 
+if barva == "červená":
+    print("Stůj")
+elif barva == "oranžová":
+     print("Připrav se")
+else:
+    print("Jeď")
 

@@ -9,4 +9,12 @@
 #         X X X X
 #     Zamysli se: na kterém řádku a sloupci se kreslí X a kdy mezera?
 
+n = int(input("zadej velikost ramecku:"))
 
+for radek in range(n):
+    for sloupec in range(n):
+        if radek == 0 or radek == n - 1 or sloupec == 0 or sloupec == n - 1:
+            print("X", end=" ")
+        else:
+            print(" ", end=" ")
+    print()

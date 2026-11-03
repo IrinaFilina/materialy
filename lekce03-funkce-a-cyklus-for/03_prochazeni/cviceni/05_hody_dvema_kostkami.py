@@ -5,4 +5,6 @@
 #    dvěma kostkami (každá má čísla 1 až 6) a u každého i jejich součet.
 #    Každý řádek bude vypadat třeba takhle: 2 + 5 = 7
 
-
+for kostka1 in range(1,7):
+    for kostka2 in range (1,7):
+        print (kostka1, "+", kostka2, "=", kostka1 + kostka2)

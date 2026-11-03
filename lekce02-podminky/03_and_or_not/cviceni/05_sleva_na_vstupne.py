@@ -5,4 +5,14 @@
 #    Navíc mají v pondělí slevu úplně všichni.
 #    Zeptej se na věk a na den a vypiš "Máš slevu." / "Plné vstupné.".
 
+vek = 34
+den = "pondeli"
+
+if den == "pondeli":
+    print ("Máš slevu.")
+else:
+    if vek < 18 or vek >= 65:
+        print ("Máš slevu.")
+    else:
+        print ("Plné vstupné.")
 

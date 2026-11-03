@@ -6,3 +6,11 @@
 #    "Můžeš dál." nebo "Ještě ne.".
 
 
+vek = int(input("Kolik je tobe let?"))
+def je_plnoleta(vek):
+    if vek >= 18:
+        print ("Můžeš dál.")
+    else:
+        print("Ještě ne.")
+    
+je_plnoleta(vek)

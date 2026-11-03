@@ -1,0 +1,6 @@
+{
+    "github.copilot.chat.copilotDebugCommand.enabled": false,
+    "chat.editor.preferCopilotHarness": false,
+    "github.copilot.chat.tools.viewImage.enabled": false,
+    "chat.titleBar.signIn.enabled": false
+}

@@ -23,6 +23,8 @@
 # Nejdřív se podíváme, jak taková kontrola vypadá bez ní.
 # Heslo bereme jako dost dlouhé, když má aspoň 8 znaků:
 
+
+
 moje_heslo = "kolo"
 if len(moje_heslo) < 8:
     print(moje_heslo, "– moc krátké")

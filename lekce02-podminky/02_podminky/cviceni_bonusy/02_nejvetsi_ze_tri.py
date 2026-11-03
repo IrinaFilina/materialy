@@ -7,4 +7,9 @@ a = 12
 b = 25
 c = 8
 
-
+if a > b and a > c:
+    print(a, ":a - nejvetsi")
+elif b > c and b > c:
+     print(b, ":b - nejvetsi")
+else:
+    print( c, ":c - nejvetsi")
