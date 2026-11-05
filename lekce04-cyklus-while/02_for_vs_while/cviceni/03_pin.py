@@ -4,4 +4,8 @@
 # Ptej se na PIN tak dlouho, dokud uživatel nezadá "1234".
 #    Pak vypiš "Odemčeno!".
 
-
+while True:
+    pin = input("Zadejte PIN: ")
+    if pin == "1234":
+        print("Odemčeno!")
+        break

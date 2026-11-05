@@ -11,4 +11,25 @@
 #     - Když řekneš, že už nechceš, hra skončí a vypíše se výsledek.
 #     Nahoru na první řádek nezapomeň:  from random import randrange
 
+from random import randrange
 
+body = 0
+print ("Más", body, "bodů")
+while True:
+    otazka = input("Chceš líznout kartu? (ano/ne)")
+    if otazka == "ano":
+        karta = randrange(2, 11)
+        print ("Liznul jsi kartu s hodnotou:", karta)
+        body = body + karta
+        print ("Más", body, "bodů")
+        if body > 21:
+            print ("Prohral jsi")
+            break
+        if body == 21:
+                    print ("Vyhral jsi")
+                    break
+    elif otazka == "ne":
+        print ("Más", body, "bodů")
+        break
+    else:
+        continue

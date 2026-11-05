@@ -13,4 +13,36 @@
 #     papír balí kámen.
 #     Nahoru na první řádek nezapomeň:  from random import randrange
 
+from random import randrange
 
+while True:
+    tahhrace = input("Zadej kamen, nuzky nebo papir:")
+
+# tah pocitace a prelozeni tahu z cisel do nazvu
+    tahpocitace = randrange(1, 4)
+
+    if tahpocitace == 1:
+        tahpocitace = 'kamen'
+    elif tahpocitace == 2:
+        tahpocitace = 'nuzky'
+    else: 
+        tahpocitace = 'papir'
+
+    print("Pocitac zahral:", tahpocitace)
+    print("Zahral(a) ste:", tahhrace)
+
+    if tahhrace == tahpocitace:
+        print ("Remíza.")
+    else:
+        if (tahhrace == "kamen" and tahpocitace == "nuzky") or (tahhrace == "nuzky" and tahpocitace == "papir") or (tahhrace == "papir" and tahpocitace == "kamen"):    
+            print("Vyhrál jsi." )  
+        else:
+            print("Vyhrál PC." ) 
+
+    znovu = input("Hrát znovu? (ano/ne) ")
+    if znovu == "ne":
+        break
+    
+    print("Díky za hru!")
+    
+        

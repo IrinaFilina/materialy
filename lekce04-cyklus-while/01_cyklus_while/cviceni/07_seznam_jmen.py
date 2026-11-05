@@ -6,4 +6,11 @@
 #    Cyklus ukonči, když uživatel napíše "konec".
 #    (Prázdná odpověď z inputu je prázdný text: "")
 
-
+while True:
+    jmeno = input("Jak se jmenujes? ")
+    if jmeno == "":
+        continue
+    if jmeno == 'konec':
+        break
+    print (jmeno)
+print ("Konec.")

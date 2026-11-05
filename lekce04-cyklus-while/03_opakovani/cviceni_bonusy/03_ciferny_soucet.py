@@ -7,4 +7,12 @@
 #     Zkus i záporné číslo. Aby to fungovalo, hodí se abs(cislo) –
 #     ta funkce zahodí minus.
 
+cislo = int(input("Zadejte cislo: "))
+cislo = abs(cislo)
+sumacisel = 0
 
+while cislo > 0:
+    sumacisel = sumacisel + (cislo % 10) 
+    cislo = cislo // 10
+
+print (sumacisel)
