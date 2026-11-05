@@ -6,3 +6,9 @@
 #    vyjde, tím líp. Třeba:
 #
 #    Dneska jsem viděla fialový rohlík, jak programuje.
+
+jmeno = "Irina"
+sloveso = "koupila si "
+pridavnejmeno = "novy"
+
+print(f"Vcera {jmeno} {sloveso} {pridavnejmeno} Macbook")  

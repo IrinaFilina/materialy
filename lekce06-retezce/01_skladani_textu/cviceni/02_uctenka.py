@@ -14,3 +14,16 @@ polozka2 = "dort"
 cena2 = 84.5
 polozka3 = "čaj"
 cena3 = 45
+print ()
+print (f"{polozka1:15} {cena1:8}")
+print (f"{polozka2:15} {cena2:8}")
+print (f"{polozka3:15} {cena3:8}")
+print("------------------------")
+soucet = cena1+cena2+cena3
+print(f"Soucet polozek: {soucet:8}")
+
+if  soucet >= 150:
+    finalnisoucet = soucet*0.9
+    print(f"Cena se slevou: {finalnisoucet:8}")
+
+print ()

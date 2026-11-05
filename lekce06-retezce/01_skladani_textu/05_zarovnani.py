@@ -13,7 +13,7 @@ print(f"{mesto} {teplota:.1f}")     # Praha 23.4
 
 # Za dvojtečku se vedle .1f dá napsat i číslo. To říká, kolik místa
 # si hodnota zabere. Text se v tom místě zarovná doleva:
-print(f"[{mesto:12}]")              # [Praha       ]
+print(f"[{mesto:20}]")              # [Praha       ]
 
 # a číslo doprava:
 print(f"[{teplota:8.1f}]")          # [    23.4]
