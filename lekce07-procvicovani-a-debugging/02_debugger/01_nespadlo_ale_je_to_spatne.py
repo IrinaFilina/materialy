@@ -3,8 +3,8 @@
 # ---------------------------------------------
 # Spusť soubor a zadej 2 a 3. Nespadne. Je výsledek správně?
 
-prvni = input("První číslo: ")
-druhe = input("Druhé číslo: ")
+prvni = int(input("První číslo: "))
+druhe = int(input("Druhé číslo: "))
 
 print(f"Součet: {prvni + druhe}")
 
@@ -15,8 +15,8 @@ print(f"Součet: {prvni + druhe}")
 # Celá minulá složka stála na tom, že hláška je nápověda. Tady žádná
 # není. Zbývá podívat se dovnitř: co je v proměnných doopravdy?
 
-print(prvni)            # 2
-print(type(prvni))      # <class 'str'>
+#print(prvni)            # 2
+#print(type(prvni))      # <class 'str'>
 
 
 # type() je vestavěná funkce jako len(). Řekne, jakého typu hodnota
@@ -25,10 +25,10 @@ print(type(prvni))      # <class 'str'>
 # input vrací text pokaždé, i když naťukáš číslici. A plus mezi
 # dvěma texty je spojí, jak víš z lekce 6.
 
-prvni = int(prvni)
-druhe = int(druhe)
+#prvni = int(prvni)
+#druhe = int(druhe)
 
-print(f"Součet: {prvni + druhe}")       # Součet: 5
+#print(f"Součet: {prvni + druhe}")       # Součet: 5
 
 
 # Printem se dá nakouknout do každého programu. Má to ale dvě

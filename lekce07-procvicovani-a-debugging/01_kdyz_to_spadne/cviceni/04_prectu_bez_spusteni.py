@@ -11,7 +11,7 @@
 #         print(pocet)
 #   IndentationError: unexpected indent
 #
-# Tvoje odpověď:
+# Tvoje odpověď: radek 5, pocet neni definovan vys
 
 
 # ------- Hláška 2 -------
@@ -26,7 +26,7 @@
 #       return int(text)
 #   ValueError: invalid literal for int() with base 10: '12,50'
 #
-# Tvoje odpověď:
+# Tvoje odpověď: na radku 2 prevadime text '12,50' na int, ma tam byt . misto ,
 
 
 # ------- Hláška 3 -------
@@ -37,4 +37,4 @@
 #             ~~~~~~~~~^~~~
 #   TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
 #
-# Tvoje odpověď:
+# Tvoje odpověď: na radku 6, neumi scitat int s None

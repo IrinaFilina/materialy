@@ -14,3 +14,12 @@
 
 jmeno = "Anna Nováková"
 kurz = "Python pro začátečnice"
+
+delkauvnitr = max(len(jmeno), len(kurz))
+#print(delkauvnitr)
+
+print((delkauvnitr + 4) * "*")
+print(f"* {jmeno:{delkauvnitr}} *")
+print(f"* {kurz:{delkauvnitr}} *")
+print((delkauvnitr + 4) * "*")
+

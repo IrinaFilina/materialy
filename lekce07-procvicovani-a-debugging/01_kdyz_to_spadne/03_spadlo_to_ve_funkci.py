@@ -13,7 +13,7 @@ def vypis_prumer(nazev, soucet, pocet):
 
 
 vypis_prumer("Leden", 120, 4)
-vypis_prumer("Únor", 0, 0)
+vypis_prumer("Únor", 90, 3)
 
 
 # Hláška má tentokrát tři patra:

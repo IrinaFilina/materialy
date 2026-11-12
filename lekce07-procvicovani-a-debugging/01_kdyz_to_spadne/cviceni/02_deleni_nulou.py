@@ -10,5 +10,6 @@ pocet = 0
 
 for znak in znamky:
     soucet = soucet + int(znak)
+    pocet = pocet + 1
 
 print(f"Průměr známek: {soucet / pocet:.1f}")

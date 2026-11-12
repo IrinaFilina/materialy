@@ -5,7 +5,7 @@
 # napsané správně.
 
 jablka = 5
-hruksy = 3
+hrusky = 3
 cena_jablka = 12
 cena_hrusky = 15
 

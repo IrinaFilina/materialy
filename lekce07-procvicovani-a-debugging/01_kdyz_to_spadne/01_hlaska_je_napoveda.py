@@ -11,7 +11,7 @@ vek = "30"
 
 print(f"Jméno: {jmeno}")
 
-rok_narozeni = 2026 - vek
+rok_narozeni = 2026 - int(vek)
 print(f"Rok narození: {rok_narozeni}")
 
 

@@ -7,7 +7,7 @@
 print("Začínám")
 
 cena = 100
-print(f"Cena: {cena} Kč)
+print(f"Cena: {cena} Kč")
 
 print("Hotovo")
 

@@ -13,7 +13,7 @@ def cislice_na(pin, pozice):
 pin = "4821"
 soucet = 0
 
-for i in range(len(pin) + 1):
+for i in range(len(pin)):
     cislice = cislice_na(pin, i)
     soucet = soucet + cislice
     print(f"{i + 1}. číslice: {cislice}")

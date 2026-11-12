@@ -11,7 +11,7 @@ from random import randrange
 
 
 def uklid_vstupu(text):
-    return text.strip().title()
+    return text.strip().lower()
 
 
 def tah_pocitace():
@@ -31,7 +31,7 @@ def je_platny(tah):
 def kdo_vyhral(tvuj, pocitacuv):
     if tvuj == pocitacuv:
         return "remiza"
-    vyhrala_kamenem = tvuj == "kamen" and pocitacuv == "papir"
+    vyhrala_kamenem = tvuj == "kamen" and pocitacuv == "nuzky" #papir - nuzky
     vyhrala_nuzkami = tvuj == "nuzky" and pocitacuv == "papir"
     vyhrala_papirem = tvuj == "papir" and pocitacuv == "kamen"
     if vyhrala_kamenem or vyhrala_nuzkami or vyhrala_papirem:
@@ -40,22 +40,28 @@ def kdo_vyhral(tvuj, pocitacuv):
         return "prohra"
 
 
-tvuj_tah = uklid_vstupu(input("Tvůj tah (kamen/nuzky/papir): "))
 
-if not je_platny(tvuj_tah):
-    print("Takový tah neznám.")
-else:
-    pocitacuv_tah = tah_pocitace()
-    print(f"Ty hraješ: {tvuj_tah}")
-    print(f"Počítač hrál: {pocitacuv_tah}")
+while True:
+    tvuj_tah = uklid_vstupu(input("Tvůj tah (kamen/nuzky/papir), pokud chces ukoncit hru napis stop: "))
 
-    vysledek = kdo_vyhral(tvuj_tah, pocitacuv_tah)
-    if vysledek == "vyhra":
-        print("Vyhrála jsi!")
-    elif vysledek == "remiza":
-        print("Remíza.")
+    if tvuj_tah == "stop":
+        break
+
+    if not je_platny(tvuj_tah):
+        print("Takový tah neznám.")
     else:
-        print("Prohrála jsi.")
+        pocitacuv_tah = tah_pocitace()
+        print(f"Ty hraješ: {tvuj_tah}")
+        print(f"Počítač hrál: {pocitacuv_tah}")
+
+        vysledek = kdo_vyhral(tvuj_tah, pocitacuv_tah)
+        if vysledek == "vyhra":
+            print("Vyhrála jsi!")
+        elif vysledek == "remiza":
+            print("Remíza.")
+        else:
+            print("Prohrála jsi.")
+    
 
 
 # Napsala jsi kamen a program odpověděl "Takový tah neznám."
