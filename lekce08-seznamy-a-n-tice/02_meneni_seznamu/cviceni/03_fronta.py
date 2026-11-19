@@ -6,3 +6,6 @@
 #    "Fronta je prázdná.".
 
 fronta = ["Anna", "Petra", "Jana"]
+
+for host in fronta:
+    fronta.pop

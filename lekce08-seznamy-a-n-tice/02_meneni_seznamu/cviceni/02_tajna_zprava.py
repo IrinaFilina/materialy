@@ -7,3 +7,12 @@
 #    Vyjít má:  DORT
 
 slova = ["Dům", "Okno", "Ryba", "Tužka"]
+
+pismena = []
+
+for slovo in slova:
+    pismena.append(slovo[0])
+
+print(pismena)
+
+print("".join(pismena))
